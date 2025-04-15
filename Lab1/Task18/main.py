@@ -4,8 +4,9 @@ def main():
         costs = [int(i) for i in f.readlines()]
 
     if n == 0:
-        print(0)
-        print(0, 0)
+        with open ("output.txt", "r") as f:
+            f.write("0")
+            f.write("0 0")
         return
 
     INF = 10 ** 9
